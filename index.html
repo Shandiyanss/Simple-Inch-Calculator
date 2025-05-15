@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inch Caculator</title>
+</head>
+<body>
+    <div class="box">
+         <div class="wrapper">
+            <h2 id="name">EASY CALCULATION</h2>
+        <form action=""></form>
+        <label class="conversion" for="converter" ></label>
+        <input type="text" id="converter" name="converter" placeholder="Length in cm"placeholder="Length in cm">
+
+        <div class="btn">
+        <button type="submit" onclick="convert()">Convert to inches</button>
+    </div>
+
+    <div id="result"></div>
+
+    </div>
+</div>
+
+    <script>
+        function convert(){
+        const cmVal=Number(document.getElementById("converter").value)
+        const inchVal = cmVal/2.54
+        const result=document.getElementById("result")
+        result.innerHTML=inchVal.toFixed(2) + "inches"
+
+        }
+
+
+        
+    </script>
+
+
+   
+</body>
+</html>
